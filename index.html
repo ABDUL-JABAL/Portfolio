@@ -1,0 +1,338 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+        <!-- Nav menu -->
+        <div class="container">
+            <nav id="header">
+                <div class="nav-logo">
+                    <p class="nav-name"> <span style="color: #8749f2;">DJABAL</span></p>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                       <li class="nav_list">
+                          <a href="#Home" class="nav-link active-link">HOME</a>
+                          <div class="circle"></div>
+                       </li>  
+                       <li class="nav_list">
+                        <a href="#Education" class="nav-link">EDUCATION</a>
+                        <div class="circle"></div>
+                     </li>   
+                     <li class="nav_list">
+                        <a href="#Projects" class="nav-link">PROJECTS</a>
+                        <div class="circle"></div>
+                     </li>
+                     <li class="nav_list">
+                        <a href="#Blog" class="nav-link">BLOG</a>
+                        <div class="circle"></div>
+                     </li>   
+                     <li class="nav_list">
+                        <a href="#Contact" class="nav-link">CONTACT</a>
+                        <div class="circle"></div>
+                     </li>  
+                    </ul>    
+                </div>
+                <!-- Dark mode -->
+                <div class="mode">
+                    <div class="moon-sun" id="toggle-switch">
+                        <i class="fa fa-moon" id="moon"></i>
+                        <i class="fa fa-sun" id="sun"></i>
+                    </div>
+                </div>
+                <div class="nav-menu-btn">
+    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+            <!-- main -->
+            <main class="wrapper">
+                <section class="featured-box" id="Home">
+                    <div class="featured-text">
+                        <div class="hello">
+                              <p>Hello I'm</p>
+                        </div>
+                        <div class="featured-name">
+                            <span class="typedText"></span>
+                        </div>
+                        <div class="text-info">
+                            <p>My name is BAKORA ABDUL DJABAL! I'm a web developer with 2+ years of experince</p>
+                        </div>
+                        <div class="text-btn">
+                           <button class="btn hire-btn">Hire Me</button>
+                           <button class="btn">Download CV <i class="uil uil-file"></i></button>
+                        </div>
+                        <div class="social_icons">
+                            <div class="icon_circle"></div>
+                            <div class="icon"><i class="uil uil-instagram"></i></div>
+                            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                            <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                            <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                           <img src="Assets/Screenshot 2025-04-09 204940.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-- about box -->
+                <section class="section" id="Education">
+                     <div class="top-header">
+                        <h1>MY EDUCATION BACKGROUND</h1>
+                     </div>
+                     <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <figure class="about-me">
+                                    <figcaption>
+                                        <img src="" alt="" class="profile" />
+    
+                                <h2>Web Developer</h2>
+                                <p>My name is Djabal! I'm a web developer with 1+ years of experince</p>
+                                </figure>
+                                <button class="about-me-btn">Hire Me</button>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-box">
+                                <span class="title">HTML</span>
+                                <div class="skill-bar html">
+                                    <span class="skill-per">
+                                        <span class="tooltip">90%</span>
+                                    </span>
+                                </div> 
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">CSS</span>
+                                <div class="skill-bar css">
+                                    <span class="skill-per">
+                                        <span class="tooltip">80%</span>
+                                    </span>
+                                </div> 
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">Python</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per python">
+                                        <span class="tooltip">20%</span>
+                                    </span>
+                                </div> 
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">JavaScript</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                        <span class="tooltip">40%</span>
+                                    </span>
+                                </div> 
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">PHP</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per php">
+                                        <span class="tooltip">30%</span>
+                                    </span>
+                                </div> 
+                            </div>
+                        </div>
+                     </div>
+                </section>
+                <!-- Project box -->
+                <section class="section" id="Projects">
+                    <div class="project-showcase">
+                        <h2>MY PROJECTS</h2>
+                        
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Assets/e.jpg" alt="E-commerce Website">
+                            </div>
+                            <div class="project-details">
+                                <h3>E-commerce Website</h3>
+                                <p>A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout process.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="uil uil-github"></i> GitHub</a>
+                                    <a href="#" class="project-link"><i class="uil uil-external-link-alt"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Assets/e2.png" alt="Blog Platform">
+                            </div>
+                            <div class="project-details">
+                                <h3>Personal Blog Platform</h3>
+                                <p>A clean and modern blog platform with content management system, comment section, and responsive design for all devices.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>LocalStorage</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="uil uil-github"></i> GitHub</a>
+                                    <a href="#" class="project-link"><i class="uil uil-external-link-alt"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Assets/w.jpg" alt="Weather App">
+                            </div>
+                            <div class="project-details">
+                                <h3>Weather Application</h3>
+                                <p>A real-time weather application that provides current conditions and forecasts for any location. Features include interactive maps and saved locations.</p>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>API Integration</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="uil uil-github"></i> GitHub</a>
+                                    <a href="#" class="project-link"><i class="uil uil-external-link-alt"></i> Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Blog Section -->
+                <section class="section" id="Blog">
+                    <div class="top-header">
+                        <h1>BLOG</h1>
+                        <span>Check out my latest thoughts and insights</span>
+                    </div>
+                    <div id="blog-section">
+                    </div>
+                </section>
+
+                <!-- Blog content will be populated by JavaScript -->
+                <section class="section" id="BlogDashboard">
+                    <div class="top-header">
+                        <h1>BLOG DASHBOARD</h1>
+                        <span>Manage your blog posts</span>
+                    </div>
+                    <div id="blog-dashboard">
+                        <div class="dashboard-actions">
+                            <button id="new-post-btn">Add New Post</button>
+                        </div>
+                        
+                        <div id="post-form-container" style="display: none;">
+                            <form id="blog-post-form">
+                                <input type="hidden" id="post-id">
+                                <div class="form-group">
+                                    <label for="post-title">Title</label>
+                                    <input type="text" id="post-title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="post-date">Date</label>
+                                    <input type="date" id="post-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="post-content">Content</label>
+                                    <textarea id="post-content" rows="8" required></textarea>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="submit">Save Post</button>
+                                    <button type="button" id="cancel-post">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div id="posts-list-container">
+                            <h3>All Posts</h3>
+                            <div id="posts-list">
+                                <!-- Posts will be listed here by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- contact box -->
+                <section class="section" id="Contact">
+                  <div class="top-header">
+                    <h1>Let's Work Together</h1>
+                    <span> Do you have a project in your mind, Contact me here</span>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i>Email:abduldjabal7@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Phone:+250783803902</p>
+                        </div>
+                    </div>
+             <div class="col">
+                   <div class="form-control">
+                        <div class="form-inputs">
+                           <input type="text" class="input-field" placeholder="Your Name">
+                           <input type="text" class="input-field" placeholder="Your Email">
+                        </div>
+                        <div class="text-area">
+                            <input type="text" class="input-subject" placeholder="Subject">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Send <i class="uil uil-message"></i>
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#Education">Education</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#Blog">Blog</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <div class="social_icons">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                        <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ABDULDJABAL</a> All rights reserved 2025</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <script src="index.js"></script>
+</body>
+</html>
