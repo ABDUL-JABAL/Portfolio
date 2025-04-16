@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDashboard</title>
+    <link rel="stylesheet" href="Blogdashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+    <!-- Nav menu -->
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name"> <span style="color: #8749f2;">DJABAL</span></p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="index.html" class="nav-link">HOME</a>
+                        <div class="circle"></div>
+                     </li>   
+                   <li class="nav_list">
+                    <a href="#Education" class="nav-link">EDUCATION</a>
+                    <div class="circle"></div>
+                 </li>   
+                 <li class="nav_list">
+                    <a href="#" class="nav-link">PROJECTS</a>
+                    <div class="circle"></div>
+                 </li>
+                 <li class="nav_list">
+                    <a href="#Blog" class="nav-link">BLOG</a>
+                    <div class="circle"></div>
+                 </li>   
+                 <li class="nav_list">
+                    <a href="#Contact" class="nav-link">CONTACT</a>
+                    <div class="circle"></div>
+                 </li>  
+                </ul>    
+            </div>
+            <!-- Dark mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+<i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- Blog Section -->
+        <section class="section" id="Blog">
+            <div class="top-header">
+                <h1>BLOG</h1>
+                <span>Check out my latest thoughts and insights</span>
+            </div>
+            <div id="blog-section">
+            </div>
+        </section>
+
+        <!-- Blog content will be populated by JavaScript -->
+        <section class="section" id="BlogDashboard">
+            <div class="top-header">
+                <h1><u></u>BLOG DASHBOARD</h1>
+                <span>Manage your blog posts</span>
+            </div>
+            <div id="blog-dashboard">
+                <div class="dashboard-actions">
+                    <button id="new-post-btn">Add New Post</button>
+                </div>
+                
+                <div id="post-form-container" style="display: none;">
+                    <form id="blog-post-form">
+                        <input type="hidden" id="post-id">
+                        <div class="form-group">
+                            <label for="post-title">Title</label>
+                            <input type="text" id="post-title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="post-date">Date</label>
+                            <input type="date" id="post-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="post-content">Content</label>
+                            <textarea id="post-content" rows="8" required></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit">Save Post</button>
+                            <button type="button" id="cancel-post">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="posts-list-container">
+                    <h3>All Posts</h3>
+                    <div id="posts-list">
+                        <!-- Posts will be listed here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#Education">Education</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#Blog">Blog</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="social_icons">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                    <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+                    <div class="icon"><i class="uil uil-behance-alt"></i></div>
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">ABDULDJABAL</a> All rights reserved 2025</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <script src="Blogdashboard.js"></script>
+</body>
+</html>
